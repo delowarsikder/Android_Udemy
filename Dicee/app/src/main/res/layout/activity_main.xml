@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="@drawable/newbackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+       android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/imageTop"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dicee_logo" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="2"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/leftImage_id"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dice1" />
+
+        <ImageView
+            android:id="@+id/rightImage_id"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dice2" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/rollButton_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#283f8e"
+            android:text="Roll"
+            android:textColor="#FFFfff"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+</LinearLayout>
